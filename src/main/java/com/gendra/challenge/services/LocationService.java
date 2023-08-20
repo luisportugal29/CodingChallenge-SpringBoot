@@ -48,8 +48,6 @@ public class LocationService {
             double score = (queryLatitude != 0 && queryLongitude != 0) ? 
             calculateScoreDistance(queryLatitude, queryLongitude, location.getLatitude(), location.getLongitude()) :
             calculateLevenshteinScore( location.getName(), name);   
-            
-            String x = Double.toString(score).
 
             location.setScore(score);
 
